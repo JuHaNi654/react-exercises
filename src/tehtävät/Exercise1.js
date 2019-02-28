@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 class Exercise1 extends Component {
     render() {
         return (
-            <div>
-                Hello World!
+            <div className="container">
+                <h1>Hello World!</h1>
             </div>
         )
     }

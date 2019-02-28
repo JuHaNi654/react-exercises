@@ -12,7 +12,7 @@ class Exercise3 extends Component {
     }
 
     componentDidMount() {
-        fetch('http://api.openweathermap.org/data/2.5/find?q=Helsinki&units=metric&appid=')
+        fetch('http://api.openweathermap.org/data/2.5/find?q=Helsinki&units=metric&appid=f62562dbc2ad752b7934043b1bf8dee0')
         .then((response) => response.json())
         .then((res) => {
             this.setState({
@@ -25,7 +25,7 @@ class Exercise3 extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <p>Temperature: {this.state.temperature} Celsius</p>
                 <p>Weather: {this.state.weather}</p>
                 <img src={this.state.icon} alt='icon'/>

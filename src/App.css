@@ -48,3 +48,10 @@ td, th {
   margin-left:5px;
   background:white;
 }
+
+.jokeBox {
+  margin-top: 10%;
+  border: 1px solid grey;
+  font-weight: bold;
+  font-size: 25px;
+}

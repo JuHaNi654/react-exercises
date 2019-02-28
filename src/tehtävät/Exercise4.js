@@ -40,7 +40,7 @@ class Exercise4 extends Component {
             )
         })
         return (
-            <div>
+            <div className="container">
                 <h3>Repositories</h3>
                 <input type="text" value={this.state.searchText} onChange={this.inputChanged} />
                 <button onClick={this.buttonSearch}>Search</button>

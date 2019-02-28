@@ -26,7 +26,7 @@ class Exercise2 extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="container">
                 <p>Counter: {this.state.counter}</p>
                 <button onClick={this.buttonPlus}>+</button>
                 <button onClick={this.buttonMinus}>-</button>
