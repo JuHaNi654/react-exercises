@@ -9,7 +9,7 @@ class Exercise5 extends Component {
         this.state = {
             todoList: [],
             description: '',
-            date: ''
+            date: '',
         }
     }
     inputChanged = (event) => {
@@ -25,12 +25,13 @@ class Exercise5 extends Component {
             todoList: [...this.state.todoList, newTodo]
         })
     }
+    
     deleteTodo = (index) => {
         const todo = this.state.todoList.filter((todo, i) => i !== index)
         this.setState({
             todoList: todo
         })
-    }
+    } 
     render() {
         return (
             <div className="container"> 
